@@ -312,11 +312,11 @@ a {
 
 
 
-/* PHONE DISPLAY */
+/* WIDOK NA TELEFON DO --1K PX--- */
 
 @media screen and (max-width: 1000px) {
     .navbar {
-        width: 100vw;
+        width: 111vw;
         min-height: 80px;
         display: flex;
         flex-direction: row;
@@ -342,7 +342,7 @@ a {
     }
 
     .banner {
-        min-width: 100vw;
+        min-width: 111vw;
         min-height: 80vh;
         background-image: linear-gradient(to right top, #5c5c5c, #496074, #006a7b, #00715e, #07711e);
         display: flex;
@@ -394,7 +394,7 @@ a {
     }
     
     .offert {
-        width: 100vw;
+        width: 111vw;
         height: 100vh;
     }
 
@@ -429,7 +429,7 @@ a {
 
     .offert__container {
         height: 80vh;
-        width: 100vw;
+        width: 111vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
