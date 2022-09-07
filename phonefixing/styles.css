@@ -376,8 +376,8 @@ a {
     }
     
     .phonescontainer__img__iphone{
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 230px;
     }
 
     .banner__left__button {
@@ -434,7 +434,7 @@ a {
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        gap: 2.1rem;
+        gap: 2rem;
     }
 
     .offert__container__block{
