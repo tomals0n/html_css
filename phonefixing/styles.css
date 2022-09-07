@@ -312,11 +312,11 @@ a {
 
 
 
-/* WIDOK NA TELEFON DO --1K PX--- */
+/* PHONE DISPLAY */
 
 @media screen and (max-width: 1000px) {
     .navbar {
-        width: 111vw;
+        width: 100vw;
         min-height: 80px;
         display: flex;
         flex-direction: row;
@@ -342,7 +342,7 @@ a {
     }
 
     .banner {
-        min-width: 111vw;
+        min-width: 100vw;
         min-height: 80vh;
         background-image: linear-gradient(to right top, #5c5c5c, #496074, #006a7b, #00715e, #07711e);
         display: flex;
@@ -361,13 +361,13 @@ a {
     }
     
     .banner__left__text{
-        font-size: 32px;
+        font-size: 30px;
         text-align: center;
         margin-left: 10px;
     }
 
     .banner__left__spantext{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .banner__right {
@@ -376,8 +376,8 @@ a {
     }
     
     .phonescontainer__img__iphone{
-        width: 230px;
-        height: 230px;
+        width: 199px;
+        height: 199px;
     }
 
     .banner__left__button {
@@ -390,11 +390,10 @@ a {
         transition: all 0.4s linear;
         border-radius: 100px;
         color: white;
-        margin-left: 15px;
     }
     
     .offert {
-        width: 111vw;
+        width: 100vw;
         height: 100vh;
     }
 
@@ -409,7 +408,6 @@ a {
     }
 
     .offert__banner__text {
-        margin-right: 40px;
         padding: 4px;
         font-size: 48px;
     }
@@ -424,17 +422,15 @@ a {
         height: 20px;
         border-radius: 100px;
         background: linear-gradient(to bottom, #02ffbc, #00e89c, #00d17c, #04ba5d, #07a43e);
-        margin: 16px;
     }
 
     .offert__container {
         height: 80vh;
-        width: 111vw;
+        width: 100vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        gap: 2rem;
     }
 
     .offert__container__block{
