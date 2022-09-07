@@ -1,3 +1,6 @@
 # just-learning 
 
-It's just my small "projects", learning there HTML and CSS.
+Started learning CSS and HTML: 31.08.2022 (I will start learning JS asap)
+
+First bigger site(responsive, have own phone display):
+https://tomals0n.github.io/just-learning/phonefixing/
