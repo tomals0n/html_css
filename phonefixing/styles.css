@@ -316,7 +316,7 @@ a {
 
 @media screen and (max-width: 1000px) {
     .navbar {
-        width: 122vw;
+        width: 111vw;
         min-height: 80px;
         display: flex;
         flex-direction: row;
