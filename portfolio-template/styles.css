@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+
+.logo-img{
+    height: 100px;
+    width: 200px;
+}
+
+
+/* PHONE MENU DISPLAY */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.headermenu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+}
+
+.headermenu.active {
+    opacity: 1;
+}
+
+.phonemenu-btn {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.phonemenu-btn span {
+    width: 100%;
+    height: 0.35rem;
+    background: green;
+    border-radius: 15px;
+}
+
+.phonemenu-btn.active {
+    z-index: 1;
+}
+
+.phonemenu-btn.active > span:nth-child(3) {
+    transform: rotate(45deg) translateY(-1rem);
+}
+
+.phonemenu-btn.active > span:nth-child(2) {
+    transform: rotate(-45deg) translateY(1rem);
+}
+
+.phonemenu-btn.active > span:nth-child(1) {
+    display: none;
+}
+
+.calltoaction-bg {
+    background: url(./img/background-img.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text{
+    position: absolute;
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+    background: rgba(0,0,0,0.65);
+    padding: 2rem 3rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.home-text span {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: normal;
+    text-align: center;
+    color: #0ebcad; 
+}
+
+/* PC DISPLAY */
+
+
+@media only screen and (min-width: 1000px) {
+
+    .phonemenu-btn {
+        display: none;
+    }
+
+    .headermenu {
+        position: unset;
+        background: inherit;
+        color: black;
+        list-style: none;
+        flex-direction: row;
+        font-size: 1.5rem;
+        font-weight: normal;
+        gap: 3rem;
+        height: inherit;
+        width: max-content;
+        opacity: 1;
+        align-items: center;
+    }
+
+    .headermenu-link {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .headermenu-link::after{
+        content: "";
+        width: 100%;
+        height: 0.15rem;
+        background: #0ebcad;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;        
+        transition: all 0.4s linear;
+    }
+
+    .headermenu-link:hover::after {
+        opacity: 1;
+    }
+
+    .headermenu-link:nth-child(3), .headermenu-link:nth-child(4){
+        background-image: linear-gradient(to right top, #0ebcad, #00bb96, #00b877, #00b450, #06af15);
+        padding: 0.2rem 1rem;
+        border-radius: 1.2rem;
+        text-align: center;
+        color: white;
+    }
+
+    .headermenu-link:nth-child(3):after, .headermenu-link:nth-child(4):after {
+        opacity: 0;
+    }
+
+    .calltoaction-bg {
+        background: url(./img/background-img.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-text{
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        font-size: 5rem;
+        color: white;
+        font-weight: bold;
+        background: rgba(0,0,0,0.65);
+        padding: 2rem 3rem;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    .home-text span {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: normal;
+        text-align: center;
+        color: #0ebcad; 
+    }
+};
