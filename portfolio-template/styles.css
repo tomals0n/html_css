@@ -83,13 +83,12 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(6px);
+    display: flex;
+    justify-content: center;
 }
 
 .home-text{
     position: absolute;
-    left: 16%;
-    top: 30%;
     font-size: 5rem;
     color: white;
     font-weight: bold;
