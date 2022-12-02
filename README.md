@@ -10,4 +10,4 @@ Portfolio template with mobile view:
 https://tomals0n.github.io/learning/portfolio-template/
 
 (used only HTML/CSS without JS)
-Currently learning Python.
+
